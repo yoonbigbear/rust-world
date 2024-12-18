@@ -1,5 +1,7 @@
 pub mod q7; // q7 모듈을 공개적으로 선언
 pub mod mock_rand;
+pub mod cpu;
+pub mod sync_rand;
 use std::{sync::{mpsc, Arc, Mutex}, thread::{self, JoinHandle}};
 
 pub struct ThreadPool {
